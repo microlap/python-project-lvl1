@@ -4,4 +4,4 @@ import prompt
 
 def welcome_user():
     name = prompt.string('May I have your name? ')
-    print('Hrllo,', name)
+    print('Hello,', name)

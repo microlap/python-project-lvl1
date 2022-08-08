@@ -21,8 +21,11 @@ def main():
                (n % 2 != 0 and answer == ans_neg):
                 print('Correct')
                 count += 1
-            else:
-                print(f"'yes' is wrong answer ;(. Correct answer was 'no'. \n Let's try again, {name}")
+            elif n % 2 == 0:
+                print(f"'{answer}' is wrong answer ;(. Correct answer was '{ans_pos}'. \n Let's try again, {name}")
+                count = 0
+            elif n % 2 != 0:
+                print(f"'{answer}' is wrong answer ;(. Correct answer was '{ans_neg}'. \n Let's try again, {name}")
                 count = 0
         print(f'Congratulations, {name}!')
 
@@ -31,3 +34,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+
